@@ -17,6 +17,8 @@ class TvShow {
 */
 
 // Adaptation des classes de bases pour intégrer l'héritage de Media
+// L'utilisation du mot clé extends permet aux classes Movie et TvShow de récupérer la fonctionnalité play
+// super() permet de passer les paramètres de l'URL à la classe Media
 
 class Movie extends Media {
     constructor(url, title, releasedDate, duration) {
