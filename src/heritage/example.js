@@ -71,3 +71,5 @@ const PredatorMovie = new Movie("https//www.google.com", "Predator", 1987, 107)
 
 // Je lance Predator via la méthode play de la classe Media
 PredatorMovie.play()
+
+// Ressources supplémentaires sur les Prototypes Objet : https://developer.mozilla.org/fr/docs/Learn/JavaScript/Objects/Object_prototypes
