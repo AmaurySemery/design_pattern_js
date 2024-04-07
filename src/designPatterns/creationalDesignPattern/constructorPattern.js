@@ -28,3 +28,11 @@ class Movie {
  
  // Le "New Object"
  const MovieExample = new Movie(dataExample)
+
+ /*
+ Les getters sont aussi appelés des accesseurs. 
+ Il existe deux types d’accesseurs : les getters et les setters. 
+ Les getters permettent de récupérer les valeurs des propriétés d’instance. 
+ Par exemple,  get title  me permet de récupérer la propriété  title  (ici,  this._title  ) contenue dans mon objet. 
+ Les setters permettent de modifier cette propriété.
+ */
