@@ -20,3 +20,6 @@ class Me {
  
  // Dit bonjour
  Thomas.sayHello()
+
+ // Le mot clé new permet d'instancier un nouvel objet
+ // Instancier signifie créer un nouvel objet à partir d'une fonction ou d'une classe
