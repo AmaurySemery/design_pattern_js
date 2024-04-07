@@ -11,7 +11,7 @@ class Me {
     }
  
     getFullName() {
-        return `${this._firstName} ${this._lastName}`
+        return console.log(`${this._firstName} ${this._lastName}`)
     }
  
     sayHello() {
