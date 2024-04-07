@@ -26,3 +26,5 @@ class Me {
  
  // Dit bonjour
  Thomas.sayHello()
+
+ // Plus de ressources sur this ici : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/this
