@@ -1,6 +1,7 @@
 class App {
     constructor() {
         this.$moviesWrapper = document.querySelector('.movies-wrapper')
+        this.$modalWrapper = document.querySelector('.modal')
         
         this.moviesApi = new MovieApi('/data/new-movie-data.json')
         this.externalMoviesApi = new MovieApi('/data/external-movie-data.json')
@@ -10,10 +11,11 @@ class App {
         const moviesData = await this.moviesApi.get()
         const externalMoviesData = await this.externalMoviesApi.get()
 
+        const ModalForm = new Form()
+        ModalForm.render()
+
         const Movies = moviesData.map(movie => new MoviesFactory(movie, 'newApi'))
         const ExternalMovies = externalMoviesData.map(movie => new MoviesFactory(movie, 'externalApi'))
-
-        console.log(Movies)
 
         const FullMovies = Movies.concat(ExternalMovies)
 
@@ -22,7 +24,7 @@ class App {
                 this.$moviesWrapper.appendChild(
                     Template.createMovieCard()
                 )
-            })
+        })
     }
 }
 
