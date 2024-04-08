@@ -31,3 +31,5 @@ class MoviesFactory {
 // dans le fichier app.js, on peut appeler la Factory :
 const OldMovies = oldMoviesData
     .map(movie => new MoviesFactory(movie, 'oldApi'))
+
+// Attention ceci dit, un Factory Pattern peut complexifier une base de code assez rapidement. C'est donc à utiliser judicieusement.
