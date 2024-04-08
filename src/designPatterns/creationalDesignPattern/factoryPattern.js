@@ -9,8 +9,8 @@ Dans le diagramme ci-dessus, vous pouvez voir que le Factory Pattern est compos�
 
 /*
 Le rôle du Factory Pattern est de faciliter la création d’objets au sein d’une base de code. On va s’en servir pour créer et gérer différents types d’objets qui présentent des caractéristiques similaires. Dans la pratique, on peut, par exemple, s’en servir pour :
-* Gérer différentes sources de données. Dans le cas de notre application, ces données proviennent de deux fichiers différents. Cela dit, ces données pourraient aussi venir d’une API et d’une base de données ;
-* Gérer des basculements de données. Autrement dit, passer de données mockées (comme c’est le cas actuellement dans notre projet) à des données provenant d’une API.
+* Gérer différentes sources de données.
+* Gérer des basculements de données. Autrement dit, passer de données mockées à des données provenant d’une API.
 */
 
 class MoviesFactory {
