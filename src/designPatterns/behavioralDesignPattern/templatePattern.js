@@ -1,3 +1,11 @@
+/*
+Un Template Pattern est composé des éléments suivants :
+* Un acteur Template. Cet acteur peut réaliser une série d’étapes, par exemple envoyer ou recevoir des données d’une API ;
+* Des objets qui héritent de l’acteur Template. C’est dans ces objets que nous allons réaliser l’implémentation de l’algorithme.
+*/
+
+// Le Template Pattern permet de faciliter la création de plusieurs algorithmes ayant une structure similaire mais des implémentations différentes.
+
 // Vehicule sera notre classe abstraite. On s'en servira uniquement pour l'héritage
 class Vehicule {
     constructor(name, type) {
