@@ -5,6 +5,12 @@ class App {
         
         this.moviesApi = new MovieApi('/data/new-movie-data.json')
         this.externalMoviesApi = new MovieApi('/data/external-movie-data.json')
+
+        // WishLib Pub/sub
+        this.WishlistSubject = new WishlistSubject()
+        this.WhishListCounter = new WhishListCounter()
+
+        this.WishlistSubject.subscribe(this.WhishListCounter)
     }
 
     async main() {
@@ -16,7 +22,6 @@ class App {
 
         const FullMovies = Movies.concat(ExternalMovies)
 
-
         const Form = new FormModal()
         Form.render()
 
@@ -27,7 +32,10 @@ class App {
         Sorter.render()
 
         FullMovies.forEach(movie => {
-                const Template = movieCardWithPlayer(new MovieCard(movie))
+                const Template = movieCardWithPlayer(
+                    new MovieCard(movie, this.WishlistSubject)
+                )
+
                 this.$moviesWrapper.appendChild(
                     Template.createMovieCard()
                 )
